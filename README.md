@@ -7,5 +7,7 @@
   3.2. Array izquierdo lleno y derecho vacío, la posición intermedia será la suma del array izquierdo más las columnas entre 2.
   3.3. Array izquierdo vacío y derecho lleno, la posición media será array derecho en la posicion cero entre 2.
   3.4. Si están los dos vacíos, los rellenamos, los sumamos y dividimos entre 2. Obtenemos la posición media.
+  
+4. Por último, con un controlador P le damos velocidad de avance y giro probando diferentes valores para cada una.
 
 
