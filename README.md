@@ -1,1 +1,3 @@
-# Follow_Line
+1. Realizamos un filtro de color en el espacio hsv usando la biblioteca de opencv, de los datos que obtenemos del sensor cámara, para quedarnos sólo con la carretera por la que va a circular el coche. El resultado será una zona en blanco que es la carretera y la negra el resto.
+2. Teniendo ya todo lo anterior, el siguiente paso es conseguir los dos puntos extremos de la linea roja. Para ello miramos siempre la fila 365 y añadimos al array izquierdo la columna donde 'value' es 255 y al array derecho la columna donde 'value' es -255. 'Value' es la diferencia entre el pixel actual y el anterior.
+
