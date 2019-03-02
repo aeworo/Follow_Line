@@ -12,4 +12,7 @@
   
 4. Por último, con un controlador P le damos velocidad de avance y giro probando diferentes valores para cada una.
 
+Se ha tomado como apoyo el mismo ejercicio realizado por la compañera Vanessa Fernández. A continuación, adjunto el enlace.
+https://jderobot.org/Vmartinezf-tfg#Practice_1:_follow_line
+
 
