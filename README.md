@@ -11,7 +11,19 @@ Una vez sacada, la convertimos al espacio HSV al ser esa más robusta a cambios 
 
 **2. MANEJO Y CONTROL**
 
+Para dirigir y manejar los movimientos del robot he usado un controlador PD, que básicamente me servirá para corregir de forma proporcional el error cometido al conducir, es decir el salirme de la línea, y aumentar la estabilidad de mi coche. Para ello:
 
+1. Sacamos la parte central de la carretera, que es simplemente dividir entre dos las posiciones de las columnas de la imagen filtrada.
+
+2. Luego sacamos la posición en la que está el fórmula 1, y el error será la diferencia entre dicha posición y la centrar de la imagen antes saca en el punto 1.
+
+3. A continuación aplicaré el controlador PD tanto al giro como a la velocidad de avance, lo cual consistirá en multiplicar por dos contantes Kp y Kd la velocidad de giro y la de avance. El valor de dischas constantes es experimental, es decir he ido probando hasta encontrar los valores ideales. 
+Tengo un umbral de velocidad lineal, el cual dependiendo de la velocidad de giro aumentará o disminuirá. Y la de giro, aumentará o disminuirá dependiendo del valor de la desvición.
+
+4. Con todo eso, ahora solo mandamos ordenes de avance o giro al coche con valores los de avance o los de giro calculados anteriorme.
+
+**CONCLUSIONES**
+El controlador PD no ha sido muy difícil de implementar porque en internet hay muchísima documentación con ejemplos, lo más laborioso ha sido encontrar el valor de las constantes pertinentes.
 
 
 
