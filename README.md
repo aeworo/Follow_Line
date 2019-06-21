@@ -22,7 +22,10 @@ Tengo un umbral de velocidad lineal, el cual dependiendo de la velocidad de giro
 
 4. Con todo eso, ahora solo mandamos ordenes de avance o giro al coche con valores los de avance o los de giro calculados anteriorme.
 
+[Enlace] (https://www.youtube.com/watch?v=6ECD9tS1CTk)
+
 **CONCLUSIONES**
+
 El controlador PD no ha sido muy difícil de implementar porque en internet hay muchísima documentación con ejemplos, lo más laborioso ha sido encontrar el valor de las constantes pertinentes.
 
 
